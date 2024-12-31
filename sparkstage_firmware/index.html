@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Color Picker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>LED Matrix Manager</h1>
+
+    <div class="configSave">
+        <button id="configSaveButton">Save Current Config</button>
+    </div>
+
+    <div class="modeSelect">
+      <h2>Mode Select</h2>
+      <label for="auto"><input type="radio" id="auto" name="mode" value="auto">Rainbow</label>
+      <label for="singleColor"><input type="radio" id="singleColor" name="mode" value="singleColor">Single color</label>
+      <label for="singleBlink"><input type="radio" id="singleBlink" name="mode" value="singleBlink">Blink</label>
+    </div>
+
+    <h2>Color Picker</h2>
+    <table class="colorPickerSliderTable">
+        <tr>
+            <td>RED</td>
+            <td><input type="range" id="red" min="0" max="255" value="128"></td>
+            <td><label for="red"><span id="redValue">128</span></label></td>
+        </tr>
+        <tr>
+            <td>GREEN</td>
+            <td><input type="range" id="green" min="0" max="255" value="128"></td>
+            <td><label for="green"><span id="greenValue">128</span></label></td>
+        </tr>
+        <tr>
+            <td>BLUE</td>
+            <td><input type="range" id="blue" min="0" max="255" value="128"></td>
+            <td><label for="blue"><span id="blueValue">128</span></label></td>
+        </tr>
+    </table>
+    <div class="color-display" id="colorDisplay"></div>
+    <p>Selected Color: <span id="colorCode">rgb(128, 128, 128)</span></p>
+
+
+    <div id="maintenance">
+        <h2>Advanced</h2>
+          <div id="advancedControls">
+            <div id="wifiSTAConfigControls">
+              <p>Connect to the existing WiFi Network</p>
+              <p><lable>WiFi SSID: <input type="text" id="wifiSSIDText"></lable></p>
+              <p><lable>Password: <input type="password" id="wifiPSKText"></lable></p>
+              <p><button id="wifiSTAConnectButton">Connect</button></p>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

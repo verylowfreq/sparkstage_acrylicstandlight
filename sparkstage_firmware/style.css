@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    text-align: left;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 140%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 130%;
+    text-align: center;
+}
+
+div.configSave {
+    text-align: center;
+}
+
+div.configSave button {
+    font-size: 125%;
+}
+
+/* .sliders {
+    margin-bottom: 20px;
+} */
+
+table.colorPickerSliderTable tr td {
+    border: none;
+}
+
+table.colorPickerSliderTable tr td:nth-child(2) {
+    width: 80%;
+    max-width: 400px;
+}
+table.colorPickerSliderTable tr td:nth-child(3) {
+    text-align: right;
+    width: 4em;
+}  
+
+/* .slider { */
+input[type="range"] {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.color-display {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: rgb(128, 128, 128);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#colorCode {
+    font-weight: bold;
+    color: #333;
+}
+
+
+pre#statusText {
+    padding: 0.5em;
+    background-color: lightgray;
+    font-family: monospace;
+}
+
+#wifiSTAConfigControls {
+    border: 1px dashed black;
+    padding: 0.5em;
+}
